@@ -1,0 +1,12 @@
+<job id="testItem" xmlns="http://xmlns.jcp.org/xml/ns/javaee" version="1.0">
+    <listeners>
+        <listener ref="testJobListener"></listener>
+    </listeners>
+    <step id="myStep">
+        <chunk>
+            <reader ref="testItemReader"></reader>
+            <processor ref="testItemProcessor"></processor>
+            <writer ref="testItemWriter"></writer>
+        </chunk>
+    </step>
+</job>
